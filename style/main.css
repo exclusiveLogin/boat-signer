@@ -99,3 +99,26 @@ input{
     padding: 30px 20px;
     flex-wrap: wrap;
 }
+
+.gallery h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    flex: 1 0 100%;
+}
+.gallery{
+    flex-wrap: wrap;
+    display: flex;
+}
+.gallery .img{
+    flex: 1 1 24.3%;
+    border-radius: 10px;
+    display: flex;
+    padding: 12px;
+}
+.gallery img{
+    object-fit: cover;
+    border-radius: 10px;
+    /* max-height: 200px; */
+    width: 100%;
+}
