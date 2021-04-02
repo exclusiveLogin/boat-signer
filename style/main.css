@@ -15,10 +15,12 @@ body{
 .dark_block{
     background-color: #30424b;
     color: azure;
+    flex-grow: 1;
 }
 
 .light_block{
     background-color: #e7e7e7;
+    flex-grow: 1;
 }
 
 header{
@@ -37,6 +39,10 @@ header{
     object-fit: cover;
     height: 400px;
     flex-grow: 4;
+}
+.number_img{
+    object-fit: cover;
+    width: 80%;
 }
 .form_phone{
     flex-shrink: 1;
@@ -86,4 +92,10 @@ input{
     border: 2px solid grey;
     padding: 1rem 2rem;
     box-shadow: 7px 7px rgb(0 0 0 / 50%);
+}
+.number_block{
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+    flex-wrap: wrap;
 }
