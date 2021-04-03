@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  front:
+    image: "exclusivelogin/boat-signer-front"
+    ports:
+    - "8081:80"
+  back:
+    image: "exclusivelogin/boat-signer-back"
+    ports:
+    - "8080:80"

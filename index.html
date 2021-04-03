@@ -16,19 +16,19 @@
         </header>
         <section class="main_section">
             <img class="header_img" alt="Номера на лодку" src="assets/Header.jpg"/>
-
-            <div class="form_phone">
+            <form name="sf" class="form_phone" onsubmit="postOrderData(this); return false">
                 <h2>Заказать звонок</h2>
                 <label for="name">Ваше имя*</label>
                 <input id="name" type="text" placeholder="Как к Вам обращаться?" required />
 
                 <label for="phone">Ваш телефон*</label>
-                <input id="phone" type="tel" placeholder="Введите телефон" required/>
+                <input id="phone" type="tel" placeholder="Телефон" required/>
 
                 <label for="email">Ваш email</label>
-                <input id="email" type="email" placeholder="Введите email (не обязательно)" />
-            </div>
-
+                <input id="email" type="email" placeholder="Email (опционально)" />
+                
+                <button type="submit">Заказать</button>
+            </form>
             <div class="reglament_block dark_block"> 
                 <p>
                     С 1 января 2017 года введены новые правила, и номера стали в 11 символов, плюс добавился флаг. Теперь все, кто прошел регистрацию в ГИМСе, ищут способ нанесения "номера на лодку по ГОСТ". ГОСТ на номера для маломерных судов не существует, но есть "ПРИКАЗ от 24 июня 2016 г. N 340
@@ -113,5 +113,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./scripts/rest.js"></script>
 </body>
 </html>

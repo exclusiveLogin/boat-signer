@@ -122,3 +122,9 @@ input{
     /* max-height: 200px; */
     width: 100%;
 }
+button{
+    margin-top: 20px;
+    font-size: 1.7rem;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
