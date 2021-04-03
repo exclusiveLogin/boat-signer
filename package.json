@@ -1,0 +1,22 @@
+{
+    "name": "boat_signer",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "docker:build": "docker build -t exclusivelogin/boat-signer-front .",
+      "docker:publish": "npm run docker:build && docker login && docker push exclusivelogin/boat-signer-front",
+      "docker:run": "docker pull exclusivelogin/boat-signer-front && docker run --rm -d -p 8081:80 exclusivelogin/boat-signer-front"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/exclusiveLogin/boat-signer.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/exclusiveLogin/boat-signer/issues"
+    },
+    "homepage": "https://github.com/exclusiveLogin/boat-signer#readme"
+  }
+  
