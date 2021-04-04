@@ -14,8 +14,11 @@ body{
 
 .dark_block{
     background-color: #30424b;
-    color: azure;
+    
     flex-grow: 1;
+}
+.dark_block h1{
+    color: azure;
 }
 
 .light_block{
@@ -127,4 +130,7 @@ button{
     font-size: 1.7rem;
     border-radius: 8px;
     border: 1px solid grey;
+}
+#phone_orders{
+    background-color: aliceblue;
 }

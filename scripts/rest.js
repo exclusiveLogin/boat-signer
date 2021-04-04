@@ -5,14 +5,17 @@ function postOrderData(form){
         email: form.email.value,
     }
 
-    const url = 'http://217.25.92.140';
+    const url = 'http://al-tay.ru/api/order.php';
 
     $.ajax({
         type: "POST",
         url,
-        data,
+        data: JSON.stringify(data),
         contentType: 'application/json',
-        success: (result) => console.log('post result: ', result),
+        success: (result) => {
+            console.log('post result: ', result);
+            alert('Ваша заявка на звонок принята');
+        },
         dataType: 'json'
       });
    
