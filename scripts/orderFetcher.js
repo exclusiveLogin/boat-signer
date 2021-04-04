@@ -48,11 +48,11 @@ function fetchPhones(){
                 result.forEach(user => {
                     $('#phones').append(
                         `<tr ${!user.readed ? 'class="bolder"' : ''}>
-                            <td>${user.name || '-'}</td>
-                            <td>${user.phone || '-'}</td>
-                            <td>${user.email || '-'}</td>
-                            <td> --- </td>
-                            <td> --- </td>
+                            <td>${user.name || ''}</td>
+                            <td>${user.phone || ''}</td>
+                            <td>${user.email || ''}</td>
+                            <td class="uk-visible@m"></td>
+                            <td class="nowrap">${user.datetime_create || ''}</td>
                         </tr>`
                         )
                 });
