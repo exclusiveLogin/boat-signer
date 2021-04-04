@@ -40,7 +40,8 @@ if ( $_SERVER['REQUEST_METHOD'] === 'POST' ) {
 // GETTERS
 if ( $_SERVER['REQUEST_METHOD'] === 'GET' ) {
   if(!(isset($_GET['pass']) && $_GET['pass'] == 'q1w2e3r4t5y6')) {
-    die json_encode(array('error' => 'Пароль не верный'));
+    echo json_encode(array("error" => "Пароль не верный"));
+    die();
   }
 
 

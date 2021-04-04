@@ -134,3 +134,6 @@ button{
 #phone_orders{
     background-color: aliceblue;
 }
+.bolder{
+    font-weight: bold;
+}
