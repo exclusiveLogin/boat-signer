@@ -14,7 +14,7 @@ body{
 
 .dark_block{
     background-color: #30424b;
-    
+    color: azure;
     flex-grow: 1;
 }
 .dark_block h1{
