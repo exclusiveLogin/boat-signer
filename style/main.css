@@ -28,10 +28,10 @@ body{
 
 header{
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 15px;
-    justify-content: space-between;
 }
 
 .main_section{
@@ -158,4 +158,34 @@ footer{
 }
 .svg-inline--fa {
     margin: 0px 5px;
+}
+.header_row_main{
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.header_row_phone{
+    display: none;
+}
+@media (max-width: 768px) {
+    .header_row_phone{
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        /* font-size: 2rem; */
+    }
+
+    .header_row_main .contacts{
+        display: none;
+    }
+
+    .header_row_main{
+        justify-content: center;
+    }
+
+}
+
+.phone{
+    color: white;
+    text-decoration: none;
 }
