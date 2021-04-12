@@ -172,7 +172,7 @@ footer{
         display: flex;
         justify-content: center;
         flex-grow: 1;
-        font-size: 4vw;
+        font-size: 8vw;
     }
 
     .header_row_main .contacts{
